@@ -1,41 +1,3 @@
-.main {
-    width: 500px;
-    border: 2px solid grey;
-}
-
-.main :nth-child(even) {
-    background-color: red;
-}
-
-/*
-:nth-child(n)
-
-n - кожен елемент,
-відповідно:
-2n - кожний другий,
-3n - кожен третій
-odd - непарний
-even - парний
-
-
-*/
-
-.main :first-child {
-    background-color: green;
-}
-
-.main :last-child {
-    background-color: blue;
-}
-
-.main:hover {
-    background-color: blueviolet;
-}
-
-.btn:nth-child(4n) {
-    background-color: deeppink;
-}
-
 
 /*
 Створити 8 квадратів 100х100. Розташувати у лінію
@@ -53,6 +15,24 @@ even - парний
 Клас може бути заданий тільки батьківській секції. Самі квадрати - без класів.
 Використовувати псевдокласи, зробити всі кольори трьома css-правилами.
 
-
-
 */
+
+.main div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    display: inline-block;
+}
+
+
+.main div:nth-child(odd) {
+    background-color: red;
+}
+
+.main div:nth-child(even) {
+    background-color: green;
+}
+
+.main div:nth-child(3n) {
+    background-color: blue;
+}
