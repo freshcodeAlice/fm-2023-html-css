@@ -1,38 +1,30 @@
+table {
+    border-collapse: collapse;
+}
 
-/*
-Створити 8 квадратів 100х100. Розташувати у лінію
-Зробити їм такий фоновий колір:
+td {
+text-align: center;
+}
 
-1 - червоний
-2 - зелений
-3 - синій
-4 - зелений
-5 - червоний
-6 - синій
-7 - червоний
-8 - зеленим
+thead td {
+    background-color: blueviolet;
+    padding: 2px 10px;
+}
 
-Клас може бути заданий тільки батьківській секції. Самі квадрати - без класів.
-Використовувати псевдокласи, зробити всі кольори трьома css-правилами.
+tbody tr:nth-child(2n+1) td {
+    background-color: white;
+}
 
-*/
-
-.main div {
-    width: 100px;
-    height: 100px;
-    border: 1px solid grey;
-    display: inline-block;
+tbody tr:nth-child(2n) td {
+    background-color: lightgrey;
 }
 
 
-.main div:nth-child(odd) {
-    background-color: red;
+tbody tr:nth-child(2n) td:first-child {
+    background-color: lightgreen;
+
 }
 
-.main div:nth-child(even) {
-    background-color: green;
-}
-
-.main div:nth-child(3n) {
-    background-color: blue;
+tbody tr:nth-child(2n+1) td:first-child {
+    background-color: darkgreen;
 }
