@@ -14,7 +14,7 @@ POSITION
 
 - relative - відносне позиціонування. Елемент починає позиціонуватися відносно свого нормального місця в потоці.
 - fixed - елемент позиціонується відносно viewport. Елемент "виривається" з потоку, всі інші елементи його більше не помічають.
-
+- absolute - елемент абсолютно позиціонований. Виривається з потоку, всі інші елементи не бачать його. Top, left, right, bottom вказують розташування відносно найближчого в ієрархії не-статичного батьківського елементу.
 
 
 */
@@ -40,22 +40,30 @@ POSITION
     border: 1px solid black;
 }
 
-.fixed {
+
+.one {
+   position: relative;
+   top: 20px;
+   left: 100px;
+}
+
+.two {
+    position: absolute;
+    top: 10px;
+    right: 101%;
+}
+
+.three {
     position: fixed;
-}
-
-.top {
-    top: 0;
-}
-
-.bottom {
     bottom: 0;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
     right: 0;
 }
+
+.four {
+  
+}
+
+.wrapper {
+    position: relative;
+}
+
