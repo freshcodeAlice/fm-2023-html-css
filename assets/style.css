@@ -19,55 +19,24 @@ POSITION
 
 */
 
-.container {
-    background-color: lime;
-    height: 800px;
-    width: 80%;
-    margin: 0 auto;
-}
 
-.wrapper {
-    background-color: dodgerblue;
-    width: 80%;
-    height: 800px;
-}
+/*
+Створити квадрат 200х200 і всередині нього зробити маленький квадратик 50х50 в центрі батьківського квадрату
 
-.inner {
-    text-align: center;
-   
-    background-color: forestgreen;
-    border: 1px solid black;
-}
+*/
 
-
-.one {
-   position: relative;
-   top: 20px;
-   left: 100px;
-}
-
-.two {
-    /* width: 100px;
-    height: 100px; */
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.three {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-/* 
-.four {
-  position: sticky;
- top: 10px;
-} */
-
-.wrapper {
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
     position: relative;
 }
 
+.child {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(69, 197, 142);
+    top: 35%;
+    left: 35%;
+    position: absolute;
+}
