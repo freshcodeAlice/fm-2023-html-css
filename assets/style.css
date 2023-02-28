@@ -34,8 +34,7 @@ POSITION
 
 .inner {
     text-align: center;
-    width: 80px;
-    height: 80px;
+   
     background-color: forestgreen;
     border: 1px solid black;
 }
@@ -48,9 +47,13 @@ POSITION
 }
 
 .two {
+    /* width: 100px;
+    height: 100px; */
     position: absolute;
-    top: 50%;
-    right: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .three {
@@ -58,11 +61,11 @@ POSITION
     bottom: 0;
     right: 0;
 }
-
+/* 
 .four {
   position: sticky;
  top: 10px;
-}
+} */
 
 .wrapper {
     position: relative;
