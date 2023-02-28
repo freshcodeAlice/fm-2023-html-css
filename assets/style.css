@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    height: 2000px;
 }
 
 /*
@@ -20,10 +19,40 @@ POSITION
 
 */
 
+.container {
+    background-color: lime;
+    height: 800px;
+    width: 80%;
+    margin: 0 auto;
+}
 
-.element {
-    background-color: aqua;
-    position: relative;
-    top: 120px;
-    left: 40px;
+.wrapper {
+    background-color: dodgerblue;
+    width: 80%;
+    height: 800px;
+}
+
+.inner {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: forestgreen;
+    border: 1px solid black;
+}
+
+.one {
+   position: relative;
+   right: 100%;
+}
+
+.two {
+
+}
+
+.three {
+
+}
+
+.four {
+
 }
