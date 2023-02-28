@@ -1,4 +1,29 @@
-:empty {
-    width: 100px;
-    height: 100px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+/*
+POSITION
+
+- static - значення властивості position по-дефолту. Елемент вважається непозиціонованим. Top, left, right, bottom не працюють
+Якщо не статік, то елемент позиціонований.
+
+- relative - відносне позиціонування. Елемент починає позиціонуватися відносно свого нормального місця в потоці.
+
+
+
+
+*/
+
+
+.element {
+    background-color: aqua;
+    position: relative;
+    top: 120px;
+    left: 40px;
 }
