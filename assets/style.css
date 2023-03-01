@@ -5,57 +5,25 @@
 body {
     margin: 0;
 }
-
-.nav-list {
-    font-family: sans-serif;
-    font-size: 0;
-    /* background-color: #f72500; */
+h1 {
+    color: violet;
 }
 
-.nav-list li {
-    list-style-type: none;
-    font-size: 16px;
+p {
+    color: blue
 }
 
-.list-item {
-    display: inline-block;
-    background-color: #f72500;
-    /* padding: 10px; */
-    position: relative;
-
+p::first-letter {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
 }
 
-.link {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    white-space: nowrap;
+p::first-line {
+    background-color: aqua;
 }
 
-.sub-nav-list {
-    display: none; 
-    position: absolute;
-    padding: 0;
-    /* width: 100%; */
-}
 
-.sub-list-item {
-    background-color: #f72500;
-    width: 100%;
- 
-    /* padding: 10px; */
-}
-
-.sub-sub-nav-list {
-    top: 0;
-    left: 100%;
-}
-
-.nav-list li:hover {
-    background-color: #941b00;
-}
-
-.list-item:hover > .sub-nav-list {
-    display: block;
+span::selection {
+    background-color: yellow;
 }
