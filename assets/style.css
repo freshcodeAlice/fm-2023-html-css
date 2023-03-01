@@ -22,6 +22,7 @@ body {
     background-color: #f72500;
     /* padding: 10px; */
     position: relative;
+
 }
 
 .link {
@@ -29,25 +30,32 @@ body {
     text-decoration: none;
     padding: 10px;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .sub-nav-list {
     display: none; 
     position: absolute;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .sub-list-item {
     background-color: #f72500;
-
+    width: 100%;
+ 
     /* padding: 10px; */
+}
+
+.sub-sub-nav-list {
+    top: 0;
+    left: 100%;
 }
 
 .nav-list li:hover {
     background-color: #941b00;
 }
 
-.list-item:hover .sub-nav-list {
+.list-item:hover > .sub-nav-list {
     display: block;
 }
