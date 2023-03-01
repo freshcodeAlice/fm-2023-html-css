@@ -10,7 +10,9 @@ h1 {
 }
 
 p {
-    color: blue
+    color: blue;
+
+   
 }
 
 p::first-letter {
@@ -23,7 +25,26 @@ p::first-line {
     background-color: aqua;
 }
 
+span {
+    background-color: green
+}
+
 
 span::selection {
     background-color: yellow;
+}
+
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    width: 60px;
+}
+
+li::before, li::after {
+    content: '';
+    height: 5px;
+    width: 100%;
+    display: block;
+    background-color: brown;
 }
