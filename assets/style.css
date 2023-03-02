@@ -6,33 +6,34 @@ body {
     margin: 0;
 }
 
-
-.first {
-    width: 200px;
-    height: 300px;
-    background-color: cadetblue;
-    padding: 15px;
-    color: rgb(3, 20, 98);
-    overflow: hidden;
-    left: 50%;
-    top: 50%;
+section {
     position: relative;
 }
 
-.second {
+div {
     width: 200px;
     height: 300px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.first {
+    background-color: cadetblue;
+    color: rgb(3, 20, 98);
+    position: relative;
+    z-index: 1;
+}
+
+.second {
     background-color: rgb(107, 13, 83);
     color: rgb(134, 140, 169);
-    padding: 15px;
     position: absolute;
-    left: 100%;
-    bottom: 0;
+    top: 0;
     transition: all 1s ease;
 }
 
-.first:hover .second {
-    left: 0;
+.first:hover + .second {
+    margin-left: 200px;
 }
 
 /*
