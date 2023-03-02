@@ -6,38 +6,65 @@ body {
     margin: 0;
 }
 
-section {
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.list {
+
+}
+
+.item {
+    display: inline-block;
+    padding: 10px;
+    background-color: darksalmon;
     position: relative;
+    z-index:2;
 }
 
-div {
-    width: 200px;
-    height: 300px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.first {
-    background-color: cadetblue;
-    color: rgb(3, 20, 98);
-    position: relative;
-    z-index: 1;
-}
-
-.second {
-    background-color: rgb(107, 13, 83);
-    color: rgb(134, 140, 169);
+.sub-list{
+    z-index: -1;
+    width: 100%;
+    background-color: inherit;
     position: absolute;
-    top: 0;
-    transition: all 1s ease;
+    top: -500%;
+    right: 0;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
 }
 
-.first:hover + .second {
-    margin-left: 200px;
+.sub-item {
+    padding: 10px;
+}
+
+.item:hover .sub-list {
+    top: 100%;
 }
 
 /*
-За наведення на секцію справа має виїжджати інша картка (інший колір фону і інший текст), яка перекриває попередню
 
+за наведення на item, sub-listмає плавно виїхати вниз
+
+*/
+
+
+/*
+Transition - властивість, що дозволяє робити зміни інших властивостей плавними
+
+
+Transition-property - властивість, яку треба зповільнити
+Transition-duration - скільки часу буде займати зміна значень анімованої властивості
+Transition-timing-function - функція зміни (описує характер сповільнення)
+
+Transition-delay - затримка перед початком анімації
+
+
+Transition вказується обов'язково серед тих правил, що стосуються елементу в його нормальному стані (не у псевдокласі)
 
 */
