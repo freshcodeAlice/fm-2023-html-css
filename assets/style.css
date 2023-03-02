@@ -6,65 +6,26 @@ body {
     margin: 0;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.logo {
+    width: 100px;
+    height: 100px;
+    transition: all 500ms ease;
 }
 
-li {
-    list-style-type: none;
+.logo:hover {
+    transform: translate(50px, 20px)
 }
 
-.list {
-    position: relative;
-    z-index: 3;
-}
 
-.item {
-    display: inline-block;
-    padding: 10px;
-    background-color: darksalmon;
-    position: relative;
-}
+/* Transform - властивість для трансформації об'єкта
 
-.sub-list{
-    z-index: -1;
-    width: 100%;
-    background-color: inherit;
-    position: absolute;
-    top: -500%;
-    right: 0;
-    transition-property: all;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
-}
+Функції:
+rotate() - крутить об'єкт відносно центру. Значення в градусах (deg)
 
-.sub-item {
-    padding: 10px;
-}
-
-.item:hover .sub-list {
-    top: 100%;
-}
-
-/*
-
-за наведення на item, sub-listмає плавно виїхати вниз
-
-*/
+translate(X, Y) - зміщення об'єкта по осях X, Y
 
 
-/*
-Transition - властивість, що дозволяє робити зміни інших властивостей плавними
 
 
-Transition-property - властивість, яку треба зповільнити
-Transition-duration - скільки часу буде займати зміна значень анімованої властивості
-Transition-timing-function - функція зміни (описує характер сповільнення)
-
-Transition-delay - затримка перед початком анімації
-
-
-Transition вказується обов'язково серед тих правил, що стосуються елементу в його нормальному стані (не у псевдокласі)
 
 */
