@@ -12,13 +12,41 @@ ul li {
     list-style: none;
     width: 60px;
     position: relative;
+    background-color: bisque;
+    color: rebeccapurple;
+   transition: all 1s ease;
 }
 
-li:hover::after {
+li::before {
     content: '';
     height: 5px;
-    width: 100%;
+    width: 0;
     display: block;
-    background-color: brown;
+    background-color: violet;
     position: absolute;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+li::after {
+    content: '';
+    height: 5px;
+    width: 0;
+    display: block;
+    background-color: violet;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+li:hover::after, li:hover::before {
+    width: 100%;
+}
+
+li:hover {
+    background-color: rebeccapurple;
+    color: bisque;
+    width: 100px;
 }
