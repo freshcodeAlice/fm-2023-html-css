@@ -17,7 +17,7 @@ ul li {
  
 }
 
-li::before,  li::after{
+li::before, li::after{
     content: '';
     height: 5px;
     width: 0;
@@ -30,9 +30,7 @@ li::before,  li::after{
 }
 
 li::before {
-    height: 0;
-    width: 100%;
-    transition-property: width;
+    right: 0;
 }
 
 li:hover::after {
@@ -40,6 +38,5 @@ li:hover::after {
 }
 
 li:hover::before {
-    width: 0;
-    height: 5px;
+    width: 100%;
 }
