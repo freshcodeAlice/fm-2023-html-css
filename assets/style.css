@@ -14,39 +14,32 @@ ul li {
     position: relative;
     background-color: bisque;
     color: rebeccapurple;
-   transition: all 1s ease;
+ 
+}
+
+li::before,  li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    display: block;
+    background-color: violet;
+    position: absolute;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 
 li::before {
-    content: '';
-    height: 5px;
-    width: 0;
-    display: block;
-    background-color: violet;
-    position: absolute;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
+    height: 0;
+    width: 100%;
+    transition-property: width;
 }
 
-li::after {
-    content: '';
-    height: 5px;
-    width: 0;
-    display: block;
-    background-color: violet;
-    position: absolute;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-}
-
-li:hover::after, li:hover::before {
+li:hover::after {
     width: 100%;
 }
 
-li:hover {
-    background-color: rebeccapurple;
-    color: bisque;
-    width: 100px;
+li:hover::before {
+    width: 0;
+    height: 5px;
 }
