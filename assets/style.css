@@ -5,46 +5,20 @@
 body {
     margin: 0;
 }
-h1 {
-    color: violet;
-}
-
-p {
-    color: blue;
-
-   
-}
-
-p::first-letter {
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: red;
-}
-
-p::first-line {
-    background-color: aqua;
-}
-
-span {
-    background-color: green
-}
-
-
-span::selection {
-    background-color: yellow;
-}
 
 
 ul li {
     display: inline-block;
     list-style: none;
     width: 60px;
+    position: relative;
 }
 
-li::before, li::after {
+li:hover::after {
     content: '';
     height: 5px;
     width: 100%;
     display: block;
     background-color: brown;
+    position: absolute;
 }
