@@ -6,37 +6,40 @@ body {
     margin: 0;
 }
 
-
-ul li {
-    display: inline-block;
-    list-style: none;
-    width: 60px;
+section {
+    width: 200px;
+    height: 300px;
     position: relative;
-    background-color: bisque;
-    color: rebeccapurple;
- 
+    overflow: hidden;
+} 
+
+.first {
+    width: inherit;
+    height: inherit;
+    background-color: cadetblue;
+    padding: 15px;
+    color: rgb(3, 20, 98);
 }
 
-li::before, li::after{
-    content: '';
-    height: 5px;
-    width: 0;
-    display: block;
-    background-color: violet;
+.second {
+    width: inherit;
+    height: inherit;
+    background-color: rgb(107, 13, 83);
+    color: rgb(134, 140, 169);
+    padding: 15px;
     position: absolute;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
+    top: 0;
+    left: 100%;
+    transition: all 1s ease;
 }
 
-li::before {
-    right: 0;
+section:hover .second {
+    top: 0;
+    left: 0;
 }
 
-li:hover::after {
-    width: 100%;
-}
+/*
+За наведення на секцію справа має виїжджати інша картка (інший колір фону і інший текст), яка перекриває попередню
 
-li:hover::before {
-    width: 100%;
-}
+
+*/
