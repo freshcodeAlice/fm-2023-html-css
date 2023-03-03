@@ -6,12 +6,12 @@ body {
     margin: 0;
 }
 
-.container {
+ .container {
     border: 2px solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
+     flex-direction: row;
+    /* justify-content: space-evenly; */
+} 
 
 .item {
     width: 50px;
@@ -21,4 +21,26 @@ body {
     font-size: 20px;
     text-align: center;
     border: 1px solid grey;
+}
+
+
+/*
+Зробити три різні контейнери, по 4 квадрати в кожному. Одноманітного розміру.
+Першому контейнеру задати space-between,
+другому space-around,
+третьому space-evenly
+
+
+*/
+
+
+.container:nth-child(1) {
+    justify-content: space-between;
+}
+
+.container:nth-child(2) {
+    justify-content: space-around;
+}
+.container:nth-child(3) {
+    justify-content: space-evenly;
 }
