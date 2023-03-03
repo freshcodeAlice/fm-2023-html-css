@@ -6,32 +6,19 @@ body {
     margin: 0;
 }
 
-section {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
+.container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.logo {
-    width: 100%;
-    transition: all 500ms ease;
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid grey;
 }
-
-.logo:hover {
-    transform: skew(20deg, 40deg)
-}
-
-
-/* Transform - властивість для трансформації об'єкта
-
-Функції:
-rotate() - крутить об'єкт відносно центру. Значення в градусах (deg)
-
-translate(X, Y) - зміщення об'єкта по осях X, Y
-
-scale() - збільшує масштаб об'єкту, значення у порядку (2 - збільшує вдвічі, 1.5 - у півтора рази)
-
-skew(X, Y) - розтягує елемент на вказану кількість градусів
-
-
-*/
