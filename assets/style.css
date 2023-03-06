@@ -20,8 +20,10 @@ body {
 
 .item {
     flex-basis: 100px;
-    /* flex-grow: 1; */
+    flex-grow: 1;
     flex-shrink: 1;
+    /* Аналогічно */
+    flex: 1 1 100px;
     background-color: teal;
     color: white;
     font-size: 20px;
@@ -32,3 +34,12 @@ body {
 .item:nth-child(3) {
     flex-shrink: 3;
 }
+
+/*
+flex: 1;
+
+
+flex-grow: 1
+flex-shrink: 1
+
+*/
