@@ -12,15 +12,16 @@ body {
     border: 2px solid black;
     display: flex;
     flex-direction: row;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
    justify-content: center;
    align-items: flex-start;
 
 } 
 
 .item {
-    flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 100px;
+    /* flex-grow: 1; */
+    flex-shrink: 1;
     background-color: teal;
     color: white;
     font-size: 20px;
@@ -28,6 +29,6 @@ body {
     border: 1px solid grey;
 }
 
-.item:nth-child(2) {
-    flex-grow: 10;
+.item:nth-child(3) {
+    flex-shrink: 3;
 }
