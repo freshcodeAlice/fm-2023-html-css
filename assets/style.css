@@ -12,8 +12,8 @@ body {
     display: flex;
     flex-direction: row;
    flex-wrap: wrap;
-    /* flex-flow - скорочення для flex-direction + flex-wrap */
-    flex-flow: row wrap;
+   justify-content: center;
+   align-items: flex-start;
 } 
 
 .item {
@@ -24,4 +24,21 @@ body {
     font-size: 20px;
     text-align: center;
     border: 1px solid grey;
+}
+
+
+.item:nth-child(3) {
+    order: 1;
+}
+
+.item:nth-child(2) {
+    order: 2;
+}
+
+.item:nth-child(1) {
+    order: 3;
+}
+
+.item:nth-child(5) {
+    order: -1;
 }
