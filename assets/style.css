@@ -13,6 +13,7 @@ body {
 
 .card-container {
     width: 450px;
+    height: 250px;
     padding: 30px 20px;
     background: rgb(142,214,251);
     background: linear-gradient(90deg, rgba(142,214,251,1) 0%, rgba(81,144,223,1) 100%);
@@ -21,8 +22,10 @@ body {
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 8px;
     position: relative;
+    align-content: space-between;
 }
 
 .card-container::after, .card-container::before {
@@ -48,12 +51,12 @@ body {
 }
 
 
-.row {
+/* .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+ */
 
 .card-container p {
     font-size: 1.5em;
