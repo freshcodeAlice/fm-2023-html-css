@@ -1,3 +1,8 @@
+:root {
+
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -6,40 +11,31 @@ body {
     margin: 0;
 }
 
-.container {
-    /* width: 1204px; */
-    height: 400px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
-   align-items: flex-start;
-
-} 
-
-.item {
-    flex-basis: 100px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    /* Аналогічно */
-    flex: 1 1 100px;
-    background-color: teal;
+.card-container {
+    width: 300px;
+    padding: 20px 10px;
+    background: rgb(142,214,251);
+    background: linear-gradient(90deg, rgba(142,214,251,1) 0%, rgba(81,144,223,1) 100%);
     color: white;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid grey;
-}
-
-.item:nth-child(3) {
-    flex-shrink: 3;
 }
 
 /*
-flex: 1;
+1em - розміром батьківського шрифту
 
-
-flex-grow: 1
-flex-shrink: 1
+1rem (root) - одному розміру шрифта, що встановлений у системі за замовчуванням (або у root-елемента)
 
 */
+
+.card-container p {
+    font-size: 1em; /* якщо в системі 1em = 16px */
+}
+
+.card-container p span {
+    font-size: 5em; /* 5em = 80px; */
+}
+
+/* якщо би всередині спана був ще один дочірній елемент, то його 1em = 80px */
+
+.card-container h3 {
+
+}
