@@ -1,6 +1,6 @@
-:root {
+/* :root {
 
-}
+} */
 
 
 * {
@@ -12,30 +12,60 @@ body {
 }
 
 .card-container {
-    width: 300px;
-    padding: 20px 10px;
+    width: 450px;
+    padding: 30px 20px;
     background: rgb(142,214,251);
     background: linear-gradient(90deg, rgba(142,214,251,1) 0%, rgba(81,144,223,1) 100%);
     color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
 }
 
-/*
-1em - розміром батьківського шрифту
+.card-container::after, .card-container::before {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+    position: absolute;
+}
 
-1rem (root) - одному розміру шрифта, що встановлений у системі за замовчуванням (або у root-елемента)
 
-*/
+.card-container::after {
+    bottom: -42%;
+    right: -6%;
+}
+
+.card-container::before {
+    top: -39%;
+    right: -18%;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .card-container p {
-    font-size: 1em; /* якщо в системі 1em = 16px */
+    font-size: 1.5em;
+    margin: 0;
 }
 
-.card-container p span {
-    font-size: 5em; /* 5em = 80px; */
+.card-container span {
+    font-size: 2em;
 }
-
-/* якщо би всередині спана був ще один дочірній елемент, то його 1em = 80px */
 
 .card-container h3 {
-
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 1em 0 1.5em;
 }
