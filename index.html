@@ -11,13 +11,13 @@
 <body>
   <form action="#" method="GET">
       <label for="firstName"> Type your name  </label>
-      <input type="text" name="firstName" id="firstName" required/>
+      <input type="text" name="firstName" id="firstName" placeholder="Ivan" required/>
 
       <label for="sureName"> Type your surename </label>
-      <input type="text" name="sureName" id="sureName"/>
+      <input type="text" name="sureName" id="sureName"  placeholder="Ivanchenko"/>
       
       <label for="email"> Type your email  </label>
-      <input type="email" name="email" id="email" required/>
+      <input type="email" name="email" id="email"  placeholder="example@mail.com" required/>
 
       <label for="bday"> Choose your birthday </label>
         <input type="date" name="bday" id="bday"/>
@@ -26,23 +26,27 @@
       <span> Gender </span>
       <label><input type="radio" name="gender" value="male"/> Male</label>
       <label><input type="radio" name="gender" value="female"/> Female</label>
-      <label><input type="radio" name="gender" value="nonBinary"/> Non-binary</label>
+      <label><input type="radio" name="gender" value="nonBinary" checked/> Non-binary</label>
       </section>
 
       <label for="file"> Choose your avatar       </label>
       <input type="file" id="file"/>
 
       <label for="city"> Choose your city       </label>
-        <input type="text" list="city" id="city" />
-        <datalist id="city" >
+        <input type="text" list="city-list" id="city" />
+        <datalist id="city-list" >
           <option>Kharkiv</option>
           <option>Kyiv</option>
           <option>Lviv</option>
         </datalist>
 
       <label for="yourself"> Tell us about yourself       </label>
-        <textarea id="yourself"></textarea>
+        <textarea id="yourself" placeholder="My name is Ivan, I love my divan"></textarea>
 
+        <label class="row-center"> 
+        <input type="checkbox" name="agreement" checked/>
+        I agree with terms
+      </label>
       <button>Send</button>
 
   </form>
