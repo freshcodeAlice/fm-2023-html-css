@@ -9,27 +9,15 @@
     <title>Document</title>
 </head>
 <body>
-<!---
-1. Ім'я
-2. Прізвище
-3. Мейл
-4. Дата народження
-5. Стать
-6. Завантажити аватарку
-7. Місто проживання
-8. Розкажи про себе
-
-До кожного поля додати label і placeholder
--->
-  <form>
+  <form action="#" method="GET">
       <label> Type your name
-        <input type="text" name="firstName" />
+        <input type="text" name="firstName" required/>
       </label>
       <label> Type your surename
         <input type="text" name="sureName" />
       </label>
       <label> Type your email
-        <input type="text" name="email" />
+        <input type="email" name="email" required/>
       </label>
       <label> Choose your birthday
         <input type="date" name="bday" />
