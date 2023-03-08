@@ -57,6 +57,14 @@ input::placeholder {
     align-items: center;
 }
 
-input:checked {
-    margin-left: 5%;
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: blueviolet;
+}
+
+input[type="checkbox"]:checked {
+    border: 5px solid blueviolet;
+    background-color: white;
 }
