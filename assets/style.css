@@ -46,8 +46,9 @@ section label {
 
 
 input::placeholder {
-    color: blueviolet;
-    background-color: bisque;
+    padding-left: 15px;
+    /* color: blueviolet; */
+    /* background-color: bisque; */
 }
 
 .row-center {
@@ -67,4 +68,17 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
     border: 5px solid blueviolet;
     background-color: white;
+}
+
+
+input:required {
+    background: url('./images/logo.png');
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
+
+input:focus {
+    background-color: yellow;
 }
