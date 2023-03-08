@@ -9,33 +9,57 @@
     <title>Document</title>
 </head>
 <body>
+<!---
+1. Ім'я
+2. Прізвище
+3. Мейл
+4. Дата народження
+5. Стать
+6. Завантажити аватарку
+7. Місто проживання
+8. Розкажи про себе
+
+До кожного поля додати label і placeholder
+-->
   <form>
-    <label>Type your name
-    <input type="text" />
-    </label>
-    <label>Select your city
-      <!-- <select name="userCity"> 
-        <option value="Kharkiv">Kharkiv</option>
-        <option value="Kyiv">Kyiv</option>
-        <option value="Dnipro">Dnipro</option>
-        <option value="Lviv">Lviv</option>
-        <option value="Odessa">Odessa</option>
-      </select> -->
-      <input type="text" name="city" list="city_list"/>
-
-      <datalist id="city_list">
-        <option value="Kharkiv">Kharkiv</option>
-        <option value="Kyiv">Kyiv</option>
-        <option value="Dnipro">Dnipro</option>
-        <option value="Lviv">Lviv</option>
-        <option value="Odessa">Odessa</option>
-      </datalist>
-  </label>
-
-  <textarea rows="5"></textarea>
-
-  <progress max="150" value="100"></progress>
+      <label> Type your name
+        <input type="text" name="firstName" />
+      </label>
+      <label> Type your surename
+        <input type="text" name="sureName" />
+      </label>
+      <label> Type your email
+        <input type="text" name="email" />
+      </label>
+      <label> Choose your birthday
+        <input type="date" name="bday" />
+      </label>
+      <label> Gender
+        <input type="radio" name="gender" value="male"/> Male
+        <input type="radio" name="gender" value="female"/> Female
+        <input type="radio" name="gender" value="nonBinary"/> Non-binary
+      </label>
+      <label> Choose your avatar
+        <input type="file" />
+      </label>
+      <label>
+        <input type="text" list="city" />
+        <datalist id="city" >
+          <option>Kharkiv</option>
+          <option>Kyiv</option>
+          <option>Lviv</option>
+        </datalist>
+      </label>
+      <label> Tell us about yourself
+        <textarea></textarea>
+      </label>
+      <button>Send</button>
 
   </form>
+
+
+
 </body>
 </html>
+
+

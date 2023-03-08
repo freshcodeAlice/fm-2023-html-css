@@ -5,13 +5,3 @@
 body {
     margin: 0;
 }
-
-
-button {
-    width: 60px;
-    height: 40px;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 25%;
-    border: none;
-}
