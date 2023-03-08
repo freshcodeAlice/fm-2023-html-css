@@ -17,5 +17,17 @@ form {
 }
 
 form input {
-    margin: 2% 0 3%;
+    margin: 1% 0 3%;
+    height: 2em;
+}
+
+/* Селектори атрибутів */
+
+form input[type="radio"] {
+    margin: 0;
+    height: 1em;
+}
+
+label[for*="Name"] {
+    background-color: violet;
 }
