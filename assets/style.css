@@ -56,3 +56,7 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
 }
+
+input:checked {
+    margin-left: 5%;
+}
