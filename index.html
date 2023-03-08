@@ -10,37 +10,37 @@
 </head>
 <body>
   <form action="#" method="GET">
-      <label> Type your name
-        <input type="text" name="firstName" required/>
-      </label>
-      <label> Type your surename
-        <input type="text" name="sureName" />
-      </label>
-      <label> Type your email
-        <input type="email" name="email" required/>
-      </label>
-      <label> Choose your birthday
-        <input type="date" name="bday" />
-      </label>
-      <label> Gender
-        <input type="radio" name="gender" value="male"/> Male
-        <input type="radio" name="gender" value="female"/> Female
-        <input type="radio" name="gender" value="nonBinary"/> Non-binary
-      </label>
-      <label> Choose your avatar
-        <input type="file" />
-      </label>
-      <label>
-        <input type="text" list="city" />
+      <label for="firstName"> Type your name  </label>
+      <input type="text" name="firstName" id="firstName" required/>
+
+      <label for="sureName"> Type your surename </label>
+      <input type="text" name="sureName" id="sureName"/>
+      
+      <label for="email"> Type your email  </label>
+      <input type="email" name="email" id="email" required/>
+
+      <label for="bday"> Choose your birthday </label>
+        <input type="date" name="bday" id="bday"/>
+
+      <span> Gender </span>
+      <label><input type="radio" name="gender" value="male"/> Male</label>
+      <label><input type="radio" name="gender" value="female"/> Female</label>
+      <label><input type="radio" name="gender" value="nonBinary"/> Non-binary</label>
+
+      <label for="file"> Choose your avatar       </label>
+      <input type="file" id="file"/>
+
+      <label for="city"> Choose your city       </label>
+        <input type="text" list="city" id="city" />
         <datalist id="city" >
           <option>Kharkiv</option>
           <option>Kyiv</option>
           <option>Lviv</option>
         </datalist>
-      </label>
-      <label> Tell us about yourself
-        <textarea></textarea>
-      </label>
+
+      <label for="yourself"> Tell us about yourself       </label>
+        <textarea id="yourself"></textarea>
+
       <button>Send</button>
 
   </form>
