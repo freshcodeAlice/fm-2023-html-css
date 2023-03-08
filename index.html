@@ -14,13 +14,22 @@
     <input type="text" />
     </label>
     <label>Select your city
-      <select name="userCity"> 
+      <!-- <select name="userCity"> 
         <option value="Kharkiv">Kharkiv</option>
         <option value="Kyiv">Kyiv</option>
         <option value="Dnipro">Dnipro</option>
         <option value="Lviv">Lviv</option>
         <option value="Odessa">Odessa</option>
-      </select>
+      </select> -->
+      <input type="text" name="city" list="city_list"/>
+
+      <datalist id="city_list">
+        <option value="Kharkiv">Kharkiv</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Dnipro">Dnipro</option>
+        <option value="Lviv">Lviv</option>
+        <option value="Odessa">Odessa</option>
+      </datalist>
   </label>
   </form>
 </body>
