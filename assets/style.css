@@ -13,8 +13,18 @@
     font-size: 18px;
 }
 
-nav {
+body {
+    display: flex;
+    flex-direction: row;
+    /* height: 800px; */
+}
+
+header {
     font-size: 20px;
+    flex-basis: 100px;
+    flex-shrink: 0;
+    background-color: wheat;
+    padding: 5%;
 }
 
 
@@ -25,17 +35,22 @@ nav ul li {
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
 }
 
 nav a {
     text-decoration: none;
 }
 
-section {
+section.main {
     display: flex;
     flex-direction: row;
+}
+
+section.side {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -49,4 +64,18 @@ h2 {
     font-size: 1.2rem;
     font-weight: 800;
     font-family: 'Climate Crisis';
+}
+
+@media screen and (max-width: 300px) {
+        body {
+            flex-direction: column;
+        }
+
+        header {
+            flex-basis: 80px;
+        }
+
+        nav ul {
+            flex-direction: row;
+        }
 }
