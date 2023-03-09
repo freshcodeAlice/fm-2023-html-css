@@ -79,3 +79,19 @@ h2 {
             flex-direction: row;
         }
 }
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+        body {
+            background-color: aquamarine;
+            flex-direction: column;
+        }
+
+
+        header {
+            flex-basis: 80px;
+        }
+
+        nav ul {
+            flex-direction: row;
+        }
+}
