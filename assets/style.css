@@ -1,4 +1,12 @@
 @import url('./reset.css');
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('./fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    font-size: 18px;
+}
 
 nav {
     font-size: 20px;
@@ -23,4 +31,16 @@ nav a {
 section {
     display: flex;
     flex-direction: row;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1em;
+    font-family: 'Dancing Script' ;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
 }
