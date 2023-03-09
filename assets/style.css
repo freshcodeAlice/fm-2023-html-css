@@ -6,6 +6,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: rgb(67, 48, 48);
+    background-blend-mode: color-dodge
 }
 
 main {
@@ -21,9 +23,11 @@ main {
     width: 20%;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 4% 2%;
     backdrop-filter: blur(8px);
+    color: rgb(25, 23, 23);
+    /* backdrop-filter: saturate(30%); */
 }
 
 .sign-form input {
@@ -31,21 +35,21 @@ main {
     height: 1.5em;
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .sign-form button {
     margin-top: 5%; 
     height: 2em;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     background-color: transparent;
-    color: white;
     font-weight: 700;
+    color: inherit;
 }
 
 .add-info {
     /* width: 100%; */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 5%;
 }
 
