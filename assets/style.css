@@ -1,5 +1,9 @@
 @import url('./reset.css');
 
+body {
+    background-color: darkmagenta;
+}
+
 
 .container {
     /* height: 600px; */
@@ -22,3 +26,17 @@ gap - зазор, пустоти між рядками та стовпцями
 
 
 */
+
+
+.item:nth-child(6) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.sub-item {
+    background-color: green;
+    color: white;
+    border: 1px solid grey;
+}
