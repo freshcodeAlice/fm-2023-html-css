@@ -5,7 +5,7 @@
     /* height: 600px; */
    display: grid;
    grid-template-columns: repeat(2, 1fr 2fr); /* 1fr 2fr 1fr 2fr*/
-    grid-template-rows: 200px 200px;  
+    grid-template-rows: repeat(3, 200px);  
 }
 
 /*
@@ -23,4 +23,22 @@ repeat(кількість разів повторити, розмір який �
     color: white; 
     font-size: 20px;
     border: 1px solid grey;
+}
+
+
+.item:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: darkolivegreen;
+    z-index: 1;
+}
+
+.item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    z-index: 2;
 }
