@@ -4,35 +4,21 @@
 .container {
     /* height: 600px; */
    display: grid;
-   grid-template-columns: repeat(4, 1fr); /* 1fr 2fr 1fr 2fr*/
-    grid-template-rows: 150px repeat(3, 100px); /*200px 400px 400px 400px */  
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 200px);
+   column-gap: 10px;
+   row-gap: 20px;
 }
 
-/*
-fr (fraction) - доля екрану
-100% екрану діляться на сумму fr по колонках. Кожна колонка отримує свою долю * на коеф
-
-
-repeat(кількість разів повторити, розмір який повторюється)
-*/
-
 .item {
-    /* width: 100px; */
-    /* height: 100px; */
     background-color: blueviolet;
     color: white; 
     font-size: 20px;
     border: 1px solid grey;
 }
 
+/*
+gap - зазор, пустоти між рядками та стовпцями
 
-.item:nth-child(1) {
-    grid-column: 1 / 5;
-    background-color: crimson;
-}
 
-.item:nth-child(2) {
-    grid-column: 1 / 2;
-    grid-row: 2 / 5;
-    background-color: yellow;
-}
+*/
